@@ -74,13 +74,14 @@
 
     <main class="p-4 xl:px-48 xl:py-12 space-y-16">
       <section class="grid auto-rows-auto xl:grid-cols-3 gap-6 xl:gap-8">
-        <picture class="mx-auto xl:col-span-2">
+        <picture class="xl:col-span-2 mx-auto overflow-hidden">
           <source
             srcset="src/assets/images/image-web-3-desktop.jpg"
             media="(min-width: 1440px)"
           />
           <source srcset="src/assets/images/image-web-3-mobile.jpg" />
           <img
+            class="hover:scale-105 transition-transform duration-500"
             src="src/assets/images/image-web-3-desktop.jpg"
             alt="Web 3"
             width="1460"
@@ -155,8 +156,9 @@
 
       <section class="grid auto-rows-auto xl:grid-cols-3 gap-8">
         <a class="group grid grid-cols-3 gap-6" href="#">
-          <picture class="col-span-1">
+          <picture class="col-span-1 overflow-hidden">
             <img
+              class="group-hover:scale-105 transition-transform duration-500"
               src="src/assets/images/image-retro-pcs.jpg"
               alt="Retro PCs"
               width="200"
@@ -177,8 +179,9 @@
         </a>
 
         <a class="group grid grid-cols-3 gap-6" href="#">
-          <picture class="col-span-1">
+          <picture class="col-span-1 overflow-hidden">
             <img
+              class="group-hover:scale-105 transition-transform duration-500"
               src="src/assets/images/image-top-laptops.jpg"
               alt="Retro PCs"
               width="200"
@@ -199,8 +202,9 @@
         </a>
 
         <a class="group grid grid-cols-3 gap-6" href="#">
-          <picture class="col-span-1">
+          <picture class="col-span-1 overflow-hidden">
             <img
+              class="group-hover:scale-105 transition-transform duration-500"
               src="src/assets/images/image-gaming-growth.jpg"
               alt="Retro PCs"
               width="200"
@@ -223,11 +227,20 @@
     </main>
 
     <footer class="pt-4 xl:pt-0">
-      <div class="attribution">
+      <div class="text-very-dark-blue text-xs text-center">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="text-dark-grayish-blue underline"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/DontMash" target="_blank">DontMash</a>.
+        >. Coded by
+        <a
+          class="text-dark-grayish-blue underline"
+          href="https://github.com/DontMash"
+          target="_blank"
+          >DontMash</a
+        >.
       </div>
     </footer>
 
